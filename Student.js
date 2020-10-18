@@ -93,36 +93,32 @@ const studentB = new Student({
   id: 4311301081,
 });
 
-// im confused around these part about how to make these output command simple since im easily forget stuff XD
 
-studentA.likes = ["Martial Arts", "Running", "Work Out"];
-studentB.likes = ["Investigate", "Shopping", "Threadmill"];
+studentA.likes = ["Martial Arts", "Running", "Work Out"]; //input hobby
+studentB.likes = ["Investigate", "Shopping", "Threadmill"]; //input hobby
+
+//======================================================================
 
 console.log(studentA.studentInfo);
 console.log("Hobby List: ");
 for (let i = 0; i < studentA.listlike.length; i++) {
   console.log(`${i + 1}. ${studentA.listlike[i]}`);
 }
-studentA.rmvNLikes = "Running";
+studentA.rmvNLikes = "Running"; //remove hobby
 console.log("Hobbies Succesfully Removed!");
-console.log("Hobby List: ");
-for (let i = 0; i < studentA.listlike.length; i++) {
-  console.log(`${i + 1}. ${studentA.listlike[i]}`);
-}
-studentA.rmvNLikes = "Running";
 
+console.log(studentA.studentInfo) //to check if hobbies removed
+
+//=======================================================================
 
 console.log(studentB.studentInfo);
 console.log("Hobby List: ");
 for (let i = 0; i < studentB.listlike.length; i++) {
   console.log(`${i + 1}. ${studentB.listlike[i]}`);
 }
-studentB.rmvNLikes = "Investigate";
+studentB.rmvNLikes = "Investigate"; //remove hobby
 console.log("Hobbies Succesfully Removed!");
-console.log("Hobby List: ");
-for (let i = 0; i < studentB.listlike.length; i++) {
-  console.log(`${i + 1}. ${studentB.listlike[i]}`);
-}
-studentB.rmvNLikes = "Investigate";
 
-//the output works just fine, its just so damn messy 
+console.log(studentB.studentInfo); //to check if hobbies removed
+
+
